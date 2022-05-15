@@ -1,0 +1,268 @@
+:root {
+    --cream: #F8F1E4;
+    --chocolate: #50322f;
+    --soft-orange: #f5a91d;
+}
+
+/* ----------------- GLOBAL CONFIGS -----------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+button {
+    width: 8em;
+    height: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: white;
+    background-color: var(--chocolate);
+    border: none;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+}
+
+button:hover {
+    color: var(--soft-orange);
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 1.5em auto;
+}
+
+/* ----------------- HTML & BODY -----------------*/
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 33vw;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--cream);
+}
+
+/* ----------------- HEADER -----------------*/
+
+header {    
+    position: fixed;  
+    width: 100%;
+    display: flex;    
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--chocolate);
+    font-size: 4.4vw;
+}
+
+header h1 {
+    margin: 0.5em auto 0.3em auto;        
+    color: var(--soft-orange);
+}
+
+header nav {
+    display: flex;    
+    flex-direction: row;
+    text-align: justify;
+    margin-bottom: 0.8em;
+}
+
+header a {
+    font-size: 0.9em;
+    font-weight: 500;
+    margin: 0.3em auto;
+    cursor: pointer;
+}
+
+header a:hover {
+    color: var(--soft-orange);
+}
+
+header a:link, a:visited, a:active, a:root {
+    text-decoration: none;
+    color: white;        
+}
+
+/* ----------------- HERO -----------------*/
+
+#hero {    
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column; 
+    font-size: 4vw;;
+    color: white;
+    height: 80vw;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80");      
+    background-repeat: no-repeat;
+    background-size: cover;     
+    margin-bottom: 1.4em;   
+    margin-top: 7em;
+}
+
+/* ----------------- MAIN MENU -----------------*/
+
+#menu, #complements, #social {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;    
+    font-size: 4.5vw;
+}
+
+#title-menu, #title-complements, #title-who {
+    width: 94%;
+    height: 2.5em;
+    border: 0.2em solid var(--chocolate);
+    color: var(--chocolate);
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+.container-menu-item {
+    width: 94%;
+    margin-bottom: 1em;
+    border: 0.2em solid var(--chocolate);
+    border-spacing: none;
+    padding-bottom: 0.8em;
+}
+
+#title-single, #title-cheese, #title-mexican {    
+    margin: 0 auto;
+    padding-top: 0.5em;
+    height: 3em;
+    color: white;
+    background-color: var(--chocolate);
+}
+
+#menu img {
+    max-width: 100%;
+    height: auto;
+}
+
+#menu p {
+    font-size: 1em;
+    font-weight: 500;
+    text-align: justify;
+    margin: 1em 1em;
+}
+
+/* ----------------- COMPLEMENTS MENU -----------------*/
+
+.container-complements-item {
+    width: 94%;
+    margin-bottom: 1em;
+}
+
+#fries, #onion-rings, #nachos, #salad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1em;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    height: 70vw;
+}
+
+#titles-complements {
+    color: white;
+    width: 100%;
+}
+
+#fries {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.35),
+        rgba(0, 0, 0, 0.35)
+    ),
+    url("https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80");  
+}
+
+#onion-rings {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.35),
+        rgba(0, 0, 0, 0.35)
+    ),
+    url("https://images.unsplash.com/photo-1637231854063-dcc3b5c4e8aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");  
+}
+
+#nachos {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1582169296194-e4d644c48063?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80");  
+}
+
+#salad {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.58),
+        rgba(0, 0, 0, 0.58)
+    ),
+    url("https://images.unsplash.com/photo-1468777675496-5782faaea55b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80");  
+}
+
+.checkbox-container {
+    width: 1em;
+    height: 1em;
+    margin-bottom: 4.5em;
+}
+
+/* ----------------- WHO WE ARE (SOCIAL) -----------------*/
+
+#social p {    
+    font-size: 1em;
+    font-weight: 500;
+    text-align: justify;
+    margin: 1em 1em;
+}
+
+#heart {
+    color: red;
+}
+
+#video {
+    width: 96%;
+}
+
+#email {
+    font-size: 4.5vw;
+    margin-top: 0;
+    width: 92%;
+    height: 2em;
+}
+
+
+
+

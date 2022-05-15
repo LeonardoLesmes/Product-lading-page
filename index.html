@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn2.iconfinder.com/data/icons/food-and-drink-free/24/Food_Drink_Foods_Burger_Hamburger_Meal_Fast_Food-256.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>LeBurger</title>
+</head>
+<body>
+    <header id="header">
+        <img id="header-img" src="" alt="">
+        <h1>LeBurger</h1>
+        <nav id="nav-bar">
+            <a href="#menu" class="nav-link">Menu</a>
+            <a href="#complements" class="nav-link">Complements</a>
+            <a href="#who-are-we" class="nav-link">Who we are</a>
+        </nav>
+    </header>  
+
+    <div class="container" id="hero">
+        <h1>Handmade burgers made one by one </h1>
+    </div>  
+
+    <div class="container" id="menu">
+        <div id="title-menu">
+            <h2>Menu</h2>
+        </div>
+        <div class="container-menu-item" id="single-burger">
+            <div id="title-single">
+                <h2>Single hamburger</h2>                
+            </div> 
+            <div class="img-container" id="single-burger-img">
+                <img src="https://images.unsplash.com/photo-1611077854917-291673c6ae06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+            </div>
+            <p>A delicious burger with angus beef (200g), home baked bread, fresh vegetables and house sauce.</p>
+            <button id="buy-single">Purchase</button>
+            <br>
+            <label for="buy-single">for only 3$</label>
+            
+        </div>
+        <div class="container-menu-item" id="cheese-burger">   
+            <div id="title-cheese">
+                <h2>Cheese hamburger</h2>                
+            </div>         
+            <div class="img-container" id="cheese-burger-img">
+                <img src="https://images.unsplash.com/photo-1629896398960-20b72df12828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+            </div>
+            <p>A delicious burger with angus beef (200g), home-baked bun, fresh vegetables, house sauce, premium cheese and bacon.</p>
+            <button id="buy-single">Purchase</button>
+            <br>
+            <label for="buy-single">for only 3.5$</label>
+        </div>
+        <div class="container-menu-item" id="mexican-burger">
+            <div id="title-mexican">
+                <h2>Mexican hamburger</h2>                     
+            </div> 
+            <div class="img-container" id="mexican-burger-img"> 
+                <img src="https://images.unsplash.com/photo-1604908815662-f2755725e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" alt="">
+            </div>
+            <p>A delicious burger with angus beef (200g), homemade baked bread, fresh vegetables, Mexican sauce, Oaxaca cheese, pickled jalapenos and pico de gallo.</p>            
+            <button id="buy-single">Purchase</button>
+            <br>
+            <label for="buy-single">for only 3.5$</label>
+        </div>
+    </div>
+    <div class="container" id="complements">
+        <div id="title-complements">
+            <h2>Complements</h2>
+        </div>
+        <div class="container-complements-item" id="fries">
+            <div class="checkbox-container">
+                <input type="checkbox" value="fries">
+            </div>
+            <div id="titles-complements">
+                <h3>Fries</h3>                
+                <p>for only 2$</p>
+            </div>
+        </div>
+        <div class="container-complements-item" id="onion-rings">
+            <div class="checkbox-container">
+                <input type="checkbox" value="onion-rings">
+            </div>
+            <div id="titles-complements">
+                <h3>Onion rings</h3>                  
+                <p>for only 2$</p>              
+            </div>
+        </div>        
+        <div class="container-complements-item" id="nachos">
+            <div class="checkbox-container">
+                <input type="checkbox" value="nachos">
+            </div>
+            <div id="titles-complements">
+                <h3>Nachos</h3>                
+                <p>for only 2.5$</p>
+            </div>
+        </div>
+        <div class="container-complements-item" id="salad"> 
+            <div class="checkbox-container">
+                <input type="checkbox" value="salad">
+            </div>
+            <div id="titles-complements">
+                <h3>Salad</h3>
+                <p>for only 1.5$</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="social">
+        <div class="container" id="who-are-we">
+            <div id="title-who">
+                <h2>Who we are</h2>
+            </div>
+            <p>We are a small restaurant that wants to serve our customers the most delicious and highest quality food we can produce. Using fresh ingredients, meat molded by us and home baked buns. We make each burger one by one and we make them with love <span id="heart">&hearts;</span> </p>
+            <p>Below you can see the process of creating one of our hamburgers.</p>
+            <div class="video-container">
+                <iframe width="1000" height="250" id="video" src="https://www.youtube.com/embed/_yb5XznD_yA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>      
+            </div>
+        </div>
+        <div class="container" id="media">
+            <p>Leave us your email if you wish to reeive news about products that we release.</p>
+            <div class="form-container">
+                <form  id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input id="email" type="email" type="email" placeholder="Enter here you email address" name="email" required>
+                    <br>
+                    <button id="submit" type="submit">Submit</button>
+                </form>
+            </div>
+                
+        </div>
+    </div>
+    
+    <footer class="container">
+
+    </footer>
+</body>
+
+<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</html>
