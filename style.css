@@ -42,6 +42,7 @@ input {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     margin: 1.5em auto;
+    cursor: pointer;
 }
 
 /* ----------------- HTML & BODY -----------------*/
@@ -140,6 +141,8 @@ header a:link, a:visited, a:active, a:root {
 #title-menu, #title-complements, #title-who {
     width: 94%;
     height: 2.5em;
+    font-size: 4vw;
+    text-align: center;
     border: 0.2em solid var(--chocolate);
     color: var(--chocolate);
     margin: 0 auto;
@@ -245,7 +248,7 @@ header a:link, a:visited, a:active, a:root {
     font-size: 1em;
     font-weight: 500;
     text-align: justify;
-    margin: 1em 1em;
+    margin: 0 1em;
 }
 
 #heart {
@@ -254,15 +257,163 @@ header a:link, a:visited, a:active, a:root {
 
 #video {
     width: 96%;
+    margin: 1em auto;
+    height: 50vw;
 }
 
 #email {
     font-size: 4.5vw;
-    margin-top: 0;
+    margin-top: 1em;
     width: 92%;
     height: 2em;
 }
 
+/* ----------------- FOOTER -----------------*/
+
+footer {
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-size: 3.5vw;
+    height: 2.3em;
+    background-color: var(--chocolate);
+    color: white; 
+    overflow-y: hidden;
+    padding-left: 1em;
+}
+
+@media (min-width: 1000px) {
+
+    html {
+        scroll-padding-top: 10vw;
+    }
+
+    header {      
+        flex-direction: row;
+        font-size: 1.6vw;
+        align-items: center;
+        height: 4em;
+    }
+
+    header h1 {
+        margin: 0;
+        padding-left: 1.2em;
+    }
+
+    header nav {
+        margin-bottom: 0;
+        text-align: center;
+        padding-left: 29em;
+    }
+
+    header a {
+        margin: 0;
+        padding-right: 2em;
+    }
+    
+    #hero {
+        margin-top: 2.3em;
+        height: 40vw;
+        font-size: 1.5vw;
+        background-position: center center;
+    }
+
+    #menu, #complements, #social {
+        flex-direction: row;  
+        font-size: 1.3vw;
+        width: 93%;
+        margin: 0 auto;
+    }
+
+    #title-menu, #title-complements, #title-who {
+        width: 50%;
+        font-size: 1.6vw;
+        height: 2.5em;
+        border: 0.4vw solid var(--chocolate);
+        margin-top: 3em;
+    }
+
+    .container-menu-item {
+        border: 0.4vw solid var(--chocolate);
+        margin: 0 1em;
+        margin-top: 2em;
+        height: 48vw;
+    }
+
+    #menu img {
+        height: 15em;
+    }
+
+    #buy-single {
+        margin-top: 7vw;
+    }
+
+    #buy-cheese {
+        margin-top: 5.2vw;
+    }
+
+    #buy-mexican {
+        margin-top: 3.5vw;
+    } 
+
+    #complements {
+        width: 91%;
+    }
+
+    .container-complements-item {
+        margin-top: 2em;
+        margin-bottom: 0;
+        font-size: 1.1em;        
+    }
+
+    #fries, #onion-rings, #nachos, #salad {
+        height: 30vw;
+    }
+
+    #social, #media {
+        display: contents
+    }
+
+    #who-are-we{
+        padding: 0 2em;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 2em;
+    }
+
+    .social-container {
+        width: 50%;        
+        margin: 0 2em;
+    }
+
+    #who-text {
+        padding: 3.2em 0;
+        border: 0.4vw solid var(--chocolate);
+    }
+
+    #video {
+        height: 17em;
+    }  
+
+    #media p {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    #email {
+        width: 50%;
+        font-size: 1.2vw;
+    }
+
+    footer {
+        font-size: 1vw;
+    }
+
+
+}
 
 
 
