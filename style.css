@@ -414,6 +414,11 @@ footer {
 }
 
 @media (max-height: 400px) {
+
+    html {        
+        scroll-padding-top: 10.5vw;
+    }
+
     header {
         font-size: 1.4vw;
     }
