@@ -411,8 +411,61 @@ footer {
     footer {
         font-size: 1vw;
     }
+}
 
+@media (max-height: 400px) {
+    header {
+        font-size: 1.4vw;
+    }
 
+    #hero {
+        font-size: 2vw;
+        height: 48vw;
+        margin-top: 3em;
+    }
+
+    #menu, #complements, #social { 
+        width: 60%;
+        margin: 0 auto;
+        font-size: 1.8vw;
+    }
+
+    #menu img {
+        height: 22em;
+    }
+
+    #title-menu, #title-complements, #title-who {
+        font-size: 2vw;
+        height: 2.5em;
+    }
+
+    #title-single, #title-cheese, #title-mexican {    
+        font-size: 1.5vw;
+    }
+
+    #fries, #onion-rings, #nachos, #salad {
+        height: 40vw;
+    }
+
+    #social {
+        width: 90%;
+    }
+
+    #who-text {
+        padding: 0 1em;
+    }
+
+    #video {
+        height: 22em;
+    }  
+
+    #email {        
+        font-size: 1.5vw;
+    }
+
+    footer {
+        font-size: 1vw;
+    }
 }
 
 
